@@ -6,16 +6,12 @@ import { ValueUnwrapper } from '@angular/core/src/change_detection/change_detect
 
 @Component({
     selector: 'blog',
-    template: 
-'<div class="form-group" *ngFor= "let post of blogPosts">
-    <textarea class="form" rows="7"></textarea>
-    <input class="btn btn-primary" type="submit" value="Submit">
-</div>'
+    template: '<div class="form-group" *ngFor= "let post of blogPosts"><textarea class="form" rows="7"></textarea><input class="btn btn-primary" type="submit" value="Submit"></div>'
 
 })
 
 
-export class BlogComponent {
+class BlogComponent {
         
     blogPost: Object []; 
 
